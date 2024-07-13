@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Import and Export &mdash; HOL Decision Analytics  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Data Transformation" href="../session-07/data-preparation.html" />
+    <link rel="prev" title="Attribute Operators" href="attribute-operators.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            HOL Decision Analytics
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../preface/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../preface/installation.html">Panduan Instalasi</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 01</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-01/concepts.html">Basic Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-01/dependent-and-independent.html">Dependent and Independent Variabel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-01/data-visualization.html">Data Visualization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-01/pivot-table.html">Pivot Table</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 02</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-02/probabilistic-distribution.html">Probabilistic Distribution</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-02/probabilistic-reasoning.html">Probabilistic Reasoning</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 03</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/linear-concept.html">Linear Regression Concept</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/simple-linear.html">Visualisasi Linear Regression (Simple)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/multiple-linear.html">Visualisasi Linear Regression (Simple)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 04</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-04/time-series.html">Time Series Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-04/exponential-smoothing.html">Exponential Smoothing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-04/centered-moving-average.html">Centered Moving Average</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 06</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="rapidminer-introduction.html">Introduction to Rapid Miner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="missing-values.html">Missing Values Handling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="attribute-operators.html">Attribute Operators</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Import and Export</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#import-export-process">Import &amp; Export Process</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#save-result-to-file">Save Result to File</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 07</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-07/data-preparation.html">Data Transformation</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 08</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-08/naive-bayes.html">Naive Bayes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-08/implementation.html">Implementasi Naive Bayes</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 09</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-09/k-nearest-neighbor.html">K-Nearest Neighbors (kNN)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-09/implementation.html">Implementasi k-Nearest Neighbors</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 10</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-10/k-means.html">K-Means (Clustering)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-10/implementation.html">Implementasi K-Means</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-10/variable-analysis.html">Variable Analysis</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">HOL Decision Analytics</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Import and Export</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/materials/session-06/import-export.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="import-and-export">
+<h1>Import and Export<a class="headerlink" href="#import-and-export" title="Link to this heading"></a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Jangan lupa untuk save process yang sudah kita buat sebelumnya. Klik kanan pada node “res”, lalu pilih “Save Process”. Tekan tombol “Save” atau CTRL + S untuk menyimpan proses tersebut. Lokasinya bisa diatur sesuai keinginan (biasanya di Local Repository).</p>
+</div>
+<p>Saat kita ingin share proses yang sudah kita buat, kita bisa menggunakan fitur Import dan Export. Dengan cara ini, kita bisa membagikan proses yang sudah kita lakukan kepada pihak lain, ataupun sebaliknya, kita bisa menggunakan proses yang sudah dibuat oleh orang lain.</p>
+<section id="import-export-process">
+<h2>Import &amp; Export Process<a class="headerlink" href="#import-export-process" title="Link to this heading"></a></h2>
+<p>Import/Export Process digunakan supaya kita dapat menyimpan proses yang sudah kita buat ke dalam file. File tersebut bisa kita gunakan kembali di waktu yang akan datang. Untuk melakukannya, kita dapat memilih File -&gt; Import / Export Process.</p>
+<a class="reference internal image-reference" href="../../_images/import-export.png"><img alt="Export Process" class="align-center" src="../../_images/import-export.png" style="width: 200px;" /></a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Export Process akan menyimpan proses yang sudah kita buat ke dalam file dengan extension <strong>.rmp</strong> . Jika kita Save Process (Ctrl + S), maka proses tersebut akan disimpan di dalam Local Repository.</p>
+<p>Secara default, <strong>Local Repository</strong> akan berada di C:/Users/username/Documents/RapidMiner/Local Repository.</p>
+</div>
+</section>
+<section id="save-result-to-file">
+<h2>Save Result to File<a class="headerlink" href="#save-result-to-file" title="Link to this heading"></a></h2>
+<p>Selain kita bisa menyimpan process, kita juga dapat menyimpan hasil dari process yang sudah kita buat. Untuk melakukannya, kita dapat menggunakan node “Write CSV” atau “Write Excel”.</p>
+<p>Sebagai contoh, kita akan menyimpannya di file Excel. Jadi tarik node “Write Excel” ke dalam process kita, lalu hubungkan dengan proses kita sebelumnya.</p>
+<a class="reference internal image-reference" href="../../_images/save-result.png"><img alt="Save Result" class="align-center" src="../../_images/save-result.png" style="width: 600px;" /></a>
+<p>Setelah itu, kita dapat mengatur konfigurasi dari node “Write Excel” tersebut. Kita dapat mengatur lokasi penyimpanan file, nama file, file format, dll.</p>
+<a class="reference internal image-reference" href="../../_images/save-result-configuration.png"><img alt="Save Result Configuration" class="align-center" src="../../_images/save-result-configuration.png" style="width: 600px;" /></a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Ubah lokasi excel file ke tempat yang kamu inginkan</p>
+</div>
+<p>Jika sudah selesai, tekan tombol “Run”, maka hasil dari process kita akan disimpan di dalam file Excel tersebut. (Contoh: <a class="reference external" href="/assets/session-06/Session06-Results.xlsx">File Output</a>)</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="attribute-operators.html" class="btn btn-neutral float-left" title="Attribute Operators" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../session-07/data-preparation.html" class="btn btn-neutral float-right" title="Data Transformation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, JC22-2.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pivot Table &mdash; HOL Decision Analytics  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Probabilistic Distribution" href="../session-02/probabilistic-distribution.html" />
+    <link rel="prev" title="Data Visualization" href="data-visualization.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            HOL Decision Analytics
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../preface/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../preface/installation.html">Panduan Instalasi</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 01</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="concepts.html">Basic Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dependent-and-independent.html">Dependent and Independent Variabel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-visualization.html">Data Visualization</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Pivot Table</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#cara-membuat-pivot-table">Cara Membuat Pivot Table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cara-mengolah-data-di-pivot-table">Cara Mengolah Data di Pivot Table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#latihan">Latihan</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 02</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-02/probabilistic-distribution.html">Probabilistic Distribution</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-02/probabilistic-reasoning.html">Probabilistic Reasoning</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 03</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/linear-concept.html">Linear Regression Concept</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/simple-linear.html">Visualisasi Linear Regression (Simple)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/multiple-linear.html">Visualisasi Linear Regression (Simple)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 04</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-04/time-series.html">Time Series Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-04/exponential-smoothing.html">Exponential Smoothing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-04/centered-moving-average.html">Centered Moving Average</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 06</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-06/rapidminer-introduction.html">Introduction to Rapid Miner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-06/missing-values.html">Missing Values Handling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-06/attribute-operators.html">Attribute Operators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-06/import-export.html">Import and Export</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 07</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-07/data-preparation.html">Data Transformation</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 08</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-08/naive-bayes.html">Naive Bayes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-08/implementation.html">Implementasi Naive Bayes</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 09</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-09/k-nearest-neighbor.html">K-Nearest Neighbors (kNN)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-09/implementation.html">Implementasi k-Nearest Neighbors</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 10</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-10/k-means.html">K-Means (Clustering)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-10/implementation.html">Implementasi K-Means</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-10/variable-analysis.html">Variable Analysis</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">HOL Decision Analytics</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Pivot Table</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/materials/session-01/pivot-table.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="pivot-table">
+<h1>Pivot Table<a class="headerlink" href="#pivot-table" title="Link to this heading"></a></h1>
+<p>Pivot table adalah salah satu fitur yang sangat berguna dalam pengolahan data. Pivot table memungkinkan kita untuk mengubah bentuk data yang ada menjadi bentuk yang lebih mudah dipahami. Dengan pivot table, kita dapat mengelompokkan data berdasarkan kriteria tertentu, menghitung nilai rata-rata, jumlah, atau nilai lainnya, dan menampilkan data dalam bentuk tabel yang lebih mudah dipahami.</p>
+<img alt="../../_images/pivot-example.png" src="../../_images/pivot-example.png" />
+<section id="cara-membuat-pivot-table">
+<h2>Cara Membuat Pivot Table<a class="headerlink" href="#cara-membuat-pivot-table" title="Link to this heading"></a></h2>
+<ol class="arabic simple">
+<li><p>Buka file Excel yang berisi data yang ingin diolah. Anda bisa menggunakan template dari file berikut (sama dengan file di part sebelumnya): <a class="reference external" href="/assets/session-01/template.xlsx">Template.xlsx</a></p></li>
+<li><p>Blok semua data yang ingin diolah. Di tab Pivot Table, blok semua data yang ingin diolah. Kita dapat menggunakan <strong>CTRL + A</strong> untuk memblok semua data di tabel tersebut.</p></li>
+<li><p>Klik <strong>Insert</strong> di menu bar, lalu pilih <strong>Pivot Table</strong>.</p></li>
+<li><p>Tentukan lokasi pivot table akan dibuat, lalu klik <strong>OK</strong>.</p></li>
+</ol>
+<blockquote>
+<div><img alt="../../_images/pivot-location.png" src="../../_images/pivot-location.png" />
+</div></blockquote>
+<ol class="arabic simple" start="5">
+<li><p>Maka tampilannya akan sepert ini</p></li>
+</ol>
+<blockquote>
+<div><img alt="../../_images/pivot-result-1.png" src="../../_images/pivot-result-1.png" />
+</div></blockquote>
+</section>
+<section id="cara-mengolah-data-di-pivot-table">
+<h2>Cara Mengolah Data di Pivot Table<a class="headerlink" href="#cara-mengolah-data-di-pivot-table" title="Link to this heading"></a></h2>
+<a class="reference internal image-reference" href="../../_images/pivot-fields-blank.png"><img alt="../../_images/pivot-fields-blank.png" src="../../_images/pivot-fields-blank.png" style="height: 400px;" /></a>
+<p>Saat kita klik di bagian Pivot Table tersebut, maka akan muncul <strong>Pivot Table Field List</strong> di sebelah kanan. Di sini kita dapat mengatur bagaimana data akan diolah.</p>
+<p>Pada bagian atas, terdapat berbagai macam fields di dalam table tersebut,
+Pada bagian bawah, kita dapat mengatur bagaimana data akan diolah. Ada 4 bagian yang dapat diatur:</p>
+<ol class="arabic simple">
+<li><p><strong>Rows</strong>: Bagian ini digunakan untuk menentukan data apa yang akan dijadikan baris di pivot table.</p></li>
+<li><p><strong>Columns</strong>: Bagian ini digunakan untuk menentukan data apa yang akan dijadikan kolom di pivot table.</p></li>
+<li><p><strong>Values</strong>: Bagian ini digunakan untuk menentukan data apa yang akan dihitung di pivot table.</p></li>
+<li><p><strong>Filters</strong>: Bagian ini digunakan untuk menentukan data apa yang akan dijadikan filter di pivot table.</p></li>
+</ol>
+<p><strong>Cara menggunakannya</strong></p>
+<p><em>click and drag</em> semua field yang akan ditampilkan. Pada contoh gambar di atas, kita ingin menampilkan <strong>City</strong> sebagai barisnya dan <strong>Total Price</strong> sebagai valuenya. Karena kita ingin filter data berdasarkan <strong>Item Name</strong>, maka kita juga memasukkan <strong>Item Name</strong> ke dalam filter.</p>
+<p>Gunakan gambar ini sebagai referensi:</p>
+<a class="reference internal image-reference" href="../../_images/pivot-fields-filled.png"><img alt="../../_images/pivot-fields-filled.png" src="../../_images/pivot-fields-filled.png" style="height: 400px;" /></a>
+<blockquote class="pull-quote">
+<div><p>Catatan: Kita juga bisa mengedit value yang akan ditampilkan. Klik tombol dropdown pada values tersebut, lalu pilih <strong>Value Field Settings</strong>. Di sini kita bisa mengubah bagaimana data akan dihitung, misalnya menjadi rata-rata, jumlah, atau lainnya.</p>
+</div></blockquote>
+<p>Kemudian, tampilan pivot table akan berubah sesuai dengan pilihan kita. Untuk menerapkan filter, kita dapat menekan dropdown di bagian atas sebagai filternya:</p>
+<a class="reference internal image-reference" href="../../_images/pivot-unfiltered.png"><img alt="../../_images/pivot-unfiltered.png" src="../../_images/pivot-unfiltered.png" style="height: 400px;" /></a>
+<p>Selamat, Anda telah berhasil membuat pivot table!</p>
+<blockquote class="pull-quote">
+<div><p>Catatan: Pivot table sangat berguna untuk mengolah data yang besar. Dengan pivot table, kita dapat mengelompokkan data berdasarkan kriteria tertentu, menghitung nilai rata-rata, jumlah, atau nilai lainnya, dan menampilkan data dalam bentuk tabel yang lebih mudah dipahami.</p>
+</div></blockquote>
+</section>
+<section id="latihan">
+<h2>Latihan<a class="headerlink" href="#latihan" title="Link to this heading"></a></h2>
+<p>Buatlah Pivot Table untuk mengetahui 3 kota dengan penjualan tertinggi terhadap 3 item yang paling banyak terjual. Gunakan data dari file <a class="reference external" href="/assets/session-01/template.xlsx">Template.xlsx</a>.</p>
+<p>Tips: Gunakan Filter untuk memilih 3 item yang paling banyak terjual.</p>
+<img alt="../../_images/pivot-exercise.png" src="../../_images/pivot-exercise.png" />
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="data-visualization.html" class="btn btn-neutral float-left" title="Data Visualization" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../session-02/probabilistic-distribution.html" class="btn btn-neutral float-right" title="Probabilistic Distribution" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, JC22-2.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

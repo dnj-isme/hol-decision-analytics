@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Transformation &mdash; HOL Decision Analytics  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Naive Bayes" href="../session-08/naive-bayes.html" />
+    <link rel="prev" title="Import and Export" href="../session-06/import-export.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            HOL Decision Analytics
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../preface/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../preface/installation.html">Panduan Instalasi</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 01</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-01/concepts.html">Basic Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-01/dependent-and-independent.html">Dependent and Independent Variabel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-01/data-visualization.html">Data Visualization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-01/pivot-table.html">Pivot Table</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 02</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-02/probabilistic-distribution.html">Probabilistic Distribution</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-02/probabilistic-reasoning.html">Probabilistic Reasoning</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 03</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/linear-concept.html">Linear Regression Concept</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/simple-linear.html">Visualisasi Linear Regression (Simple)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/multiple-linear.html">Visualisasi Linear Regression (Simple)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 04</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-04/time-series.html">Time Series Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-04/exponential-smoothing.html">Exponential Smoothing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-04/centered-moving-average.html">Centered Moving Average</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 06</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-06/rapidminer-introduction.html">Introduction to Rapid Miner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-06/missing-values.html">Missing Values Handling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-06/attribute-operators.html">Attribute Operators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-06/import-export.html">Import and Export</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 07</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Data Transformation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#select-attributes">Select Attributes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#map">Map</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#one-hot-encoding">One Hot Encoding</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cut">Cut</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#nominal-to-numerical">Nominal to Numerical</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 08</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-08/naive-bayes.html">Naive Bayes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-08/implementation.html">Implementasi Naive Bayes</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 09</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-09/k-nearest-neighbor.html">K-Nearest Neighbors (kNN)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-09/implementation.html">Implementasi k-Nearest Neighbors</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 10</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-10/k-means.html">K-Means (Clustering)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-10/implementation.html">Implementasi K-Means</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-10/variable-analysis.html">Variable Analysis</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">HOL Decision Analytics</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Data Transformation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/materials/session-07/data-preparation.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="data-transformation">
+<h1>Data Transformation<a class="headerlink" href="#data-transformation" title="Link to this heading"></a></h1>
+<p>Di session sebelumnya, kita sudah mempelajari mengenai bagaimana cara untuk mengolah data dari file. Selain itu, kita juga sudah mempelajari mengenai bagaimana cara untuk mengolah data yang hilang. Langkah tersebut adalah bagian dari proses “Data Cleaning”.</p>
+<p>Untuk session ini, kita akan mempelajari mengenai bagaimana cara untuk melakukan “Data Transformation”. Proses tersebut adalah proses dimana kita mengubah data dari bentuk asalnya menjadi bentuk yang lebih berguna bagi analisis data.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Untuk session ini, kita akan menggunakan dataset berikut: <a class="reference external" href="/assets/session-07/Dataset-Clean.xlsx">Clean Dataset</a></p>
+</div>
+<section id="select-attributes">
+<h2>Select Attributes<a class="headerlink" href="#select-attributes" title="Link to this heading"></a></h2>
+<p>Select Attributes digunakan apabila kita ingin memfilter attribute apa saja yang akan kita gunakan. Hal ini dilakukan supaya data yang redundan tidak dimasukkan ke dalam proses analisis.</p>
+<a class="reference internal image-reference" href="../../_images/Select-Attributes1.png"><img alt="Select Attributes" class="align-center" src="../../_images/Select-Attributes1.png" style="width: 600px;" /></a>
+<p>Sebagai contoh, kita tidak ingin menggunakan attribute ReportMonth, ReportYear, dan Valuation.</p>
+<p>Oleh karena itu, ubah parameter di “Select Attributes” tersebut, dengan attribute filter type “Subset” dan pilih attribute yang akan digunakan.</p>
+<p>Gunakan attribute berikut untuk menyelesaikan proses ini:</p>
+<a class="reference internal image-reference" href="../../_images/Select-Attributes-Parameters.png"><img alt="Select Attributes Result" class="align-center" src="../../_images/Select-Attributes-Parameters.png" style="width: 600px;" /></a>
+<p>Kemudian, klik tombol “Run” lalu perhatikan hasilnya.</p>
+</section>
+<section id="map">
+<h2>Map<a class="headerlink" href="#map" title="Link to this heading"></a></h2>
+<p>Mapping adalah suatu metode untuk mengubah value attribute menjadi value yang lain. Hal ini dilakukan dengan beberapa alasan. Salah satunya adalah untuk memastikan bahwa data yang kita gunakan sudah dalam format yang benar. Alasan lainnya adalah untuk mengubah data kategorikal menjadi data numerik.</p>
+<a class="reference internal image-reference" href="../../_images/Map.png"><img alt="Map" class="align-center" src="../../_images/Map.png" style="width: 600px;" /></a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Nilai dari Profit / Loss adalah “true” dan “false”. Dengan Map, kita akan mengubah true menjadi 1 dan false menjadi 0</p>
+</div>
+<p>Atur parameter di “Map” seperti berikut:</p>
+<a class="reference internal image-reference" href="../../_images/Map-Parameters.png"><img alt="Map Result" class="align-center" src="../../_images/Map-Parameters.png" style="width: 600px;" /></a>
+<p>Saat dijalankan, perhatikan value dari Profit / Loss. Jika proses berjalan dengan benar, value tersebut akan berubah menjadi 1 dan 0.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Selain menggunakan map, kita juga bisa menggunakan operator “One Hot Encoding” untuk mengubah data kategorikal menjadi data numerik.</p>
+</div>
+</section>
+<section id="one-hot-encoding">
+<h2>One Hot Encoding<a class="headerlink" href="#one-hot-encoding" title="Link to this heading"></a></h2>
+<p>One Hot Encoding adalah suatu algoritma yang digunakan untuk mengubah data kategorikal menjadi data numerik. Hal ini dilakukan dengan membuat kolom baru untuk setiap value dari data kategorikal tersebut. Misalnya, value “Merah”, “Kuning”, dan “Hijau”. Dengan One Hot Encoding, kita akan membuat kolom baru untuk setiap value tersebut, dimana “Merah” adalah [1, 0, 0], “Kuning” adalah [0, 1, 0], dan “Hijau” adalah [0, 0, 1].</p>
+<p>Untuk case kita, jika sebelumnya kita menggunakan “Map” untuk mengubah data kategorikal menjadi data numerical dengan aturan yang sudah kita tetapkan, kita juga bisa menggunakan “One Hot Encoding” untuk melakukan hal yang sama.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Untuk membandingkan hasil dari “Map” dan “One Hot Encoding”, hubungkan “Map” di bagian “Ori” ke node “One Hot Encoding” di bagian “exa”. Hal ini digunakan karena “Ori” merupakan data asli yang belum diubah melalui “Map”.</p>
+</div>
+<a class="reference internal image-reference" href="../../_images/One-Hot-Encoding.png"><img alt="One Hot Encoding" class="align-center" src="../../_images/One-Hot-Encoding.png" style="width: 600px;" /></a>
+<p>Atur parameter di “One Hot Encoding” seperti berikut:</p>
+<a class="reference internal image-reference" href="../../_images/One-Hot-Encoding-Parameters.png"><img alt="One Hot Encoding Map-Parameters" class="align-center" src="../../_images/One-Hot-Encoding-Parameters.png" style="width: 400px;" /></a>
+</section>
+<section id="cut">
+<h2>Cut<a class="headerlink" href="#cut" title="Link to this heading"></a></h2>
+<p>Di RapidMiner, operator “Cut” adalah teknik manipulasi data yang bertujuan untuk memotong data berdasarkan index. Hal ini digunakan untuk memotong data yang tidak diperlukan. Untuk contoh, mari kita gunakan operator “Cut” untuk memotong value “SalesReportID” dari “RE001” menjadi “001”</p>
+<a class="reference internal image-reference" href="../../_images/Cut.png"><img alt="Cut" class="align-center" src="../../_images/Cut.png" style="width: 600px;" /></a>
+<p>Atur parameter di “Cut” seperti berikut:</p>
+<a class="reference internal image-reference" href="../../_images/Cut-Parameters.png"><img alt="Cut Parameters" class="align-center" src="../../_images/Cut-Parameters.png" style="width: 400px;" /></a>
+</section>
+<section id="nominal-to-numerical">
+<h2>Nominal to Numerical<a class="headerlink" href="#nominal-to-numerical" title="Link to this heading"></a></h2>
+<p>Di beberapa situasi, kita memerlukan untuk mengubah data nominal menjadi numerical. Misalnya, saat kita ingin melakukan algoritma machine learning, distance calculation, data integration, dan lain-lain.</p>
+<p>Untuk mengatasi hal tersebut, kita bisa menggunakan operator “Nominal to Numerical”. Operator ini akan mengubah data nominal menjadi data numerical.</p>
+<a class="reference internal image-reference" href="../../_images/Nominal-to-Numerical.png"><img alt="Nominal to Numerical" class="align-center" src="../../_images/Nominal-to-Numerical.png" style="width: 600px;" /></a>
+<p>Untuk parameter, atur seperti berikut:</p>
+<a class="reference internal image-reference" href="../../_images/Nominal-to-Numerical-Parameters.png"><img alt="Nominal to Numerical Parameters" class="align-center" src="../../_images/Nominal-to-Numerical-Parameters.png" style="width: 400px;" /></a>
+<p>Pastikan kita sudah yakin bahwa data yang kita ubah itu sudah dalam format angka (bulat maupun desimal).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Rapid Miner menyediakan berbagai metode untuk mengubah data nominal menjadi numerical menggunakan “coding type”. Silahkan untuk mencoba semua metode lainnya untuk mengetahui metode apa yang terbaik untuk data kita.</p>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../session-06/import-export.html" class="btn btn-neutral float-left" title="Import and Export" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../session-08/naive-bayes.html" class="btn btn-neutral float-right" title="Naive Bayes" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, JC22-2.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
