@@ -6,7 +6,7 @@ Centered Moving Average adalah metode smoothing yang digunakan untuk menghilangk
 Implementasi di Ms Excel
 -------------------------
 
-Gunakan template berikut sebagain demonstrasi: `Template.xlsx </assets/session-04/template.xlsx>`_
+Gunakan template berikut sebagain demonstrasi: :download:`Template.xlsx </assets/session-04/template.xlsx>`
 
 1. Berbeda dengan Exponential Smoothing, Centered Moving Average tidak memerlukan parameter tambahan. Kita hanya perlu menentukan berapa periode yang akan kita gunakan untuk menghitung rata-rata. Misalnya, kita akan menggunakan **5 periode**.
 

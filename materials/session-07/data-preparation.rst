@@ -7,7 +7,7 @@ Untuk session ini, kita akan mempelajari mengenai bagaimana cara untuk melakukan
 
 .. note::
 
-  Untuk session ini, kita akan menggunakan dataset berikut: `Clean Dataset </assets/session-07/Dataset-Clean.xlsx>`_
+  Untuk session ini, kita akan menggunakan dataset berikut: :download:`Clean Dataset </assets/session-07/Dataset-Clean.xlsx>`
 
 Select Attributes
 ------------------

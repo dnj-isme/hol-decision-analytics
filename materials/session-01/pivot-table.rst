@@ -8,7 +8,7 @@ Pivot table adalah salah satu fitur yang sangat berguna dalam pengolahan data. P
 Cara Membuat Pivot Table
 ------------------------
 
-1. Buka file Excel yang berisi data yang ingin diolah. Anda bisa menggunakan template dari file berikut (sama dengan file di part sebelumnya): `Template.xlsx </assets/session-01/template.xlsx>`_
+1. Buka file Excel yang berisi data yang ingin diolah. Anda bisa menggunakan template dari file berikut (sama dengan file di part sebelumnya): :download:`Template.xlsx </assets/session-01/template.xlsx>`
 2. Blok semua data yang ingin diolah. Di tab Pivot Table, blok semua data yang ingin diolah. Kita dapat menggunakan **CTRL + A** untuk memblok semua data di tabel tersebut.
 3. Klik **Insert** di menu bar, lalu pilih **Pivot Table**.
 4. Tentukan lokasi pivot table akan dibuat, lalu klik **OK**.
@@ -59,7 +59,7 @@ Selamat, Anda telah berhasil membuat pivot table!
 
 Latihan
 -------
-Buatlah Pivot Table untuk mengetahui 3 kota dengan penjualan tertinggi terhadap 3 item yang paling banyak terjual. Gunakan data dari file `Template.xlsx </assets/session-01/template.xlsx>`_.
+Buatlah Pivot Table untuk mengetahui 3 kota dengan penjualan tertinggi terhadap 3 item yang paling banyak terjual. Gunakan data dari file :download:`Template.xlsx </assets/session-01/template.xlsx>`.
 
 Tips: Gunakan Filter untuk memilih 3 item yang paling banyak terjual.
 

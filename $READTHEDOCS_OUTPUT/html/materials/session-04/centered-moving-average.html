@@ -141,7 +141,7 @@
 <p>Centered Moving Average adalah metode smoothing yang digunakan untuk menghilangkan noise dari data. Metode ini bekerja dengan cara mengambil rata-rata dari data yang ada di sekitar data yang akan dihitung. Misalnya, jika kita ingin menghitung data ke-5, maka kita akan mengambil data ke-3, ke-4, ke-5, ke-6, dan ke-7. Dengan demikian, kita bisa mendapatkan nilai rata-rata dari data tersebut.</p>
 <section id="implementasi-di-ms-excel">
 <h2>Implementasi di Ms Excel<a class="headerlink" href="#implementasi-di-ms-excel" title="Link to this heading"></a></h2>
-<p>Gunakan template berikut sebagain demonstrasi: <a class="reference external" href="/assets/session-04/template.xlsx">Template.xlsx</a></p>
+<p>Gunakan template berikut sebagain demonstrasi: <a class="reference download internal" download="" href="../../_downloads/fe3b33da7cd7db7a553fb50da9f907b0/template.xlsx"><code class="xref download docutils literal notranslate"><span class="pre">Template.xlsx</span></code></a></p>
 <ol class="arabic">
 <li><p>Berbeda dengan Exponential Smoothing, Centered Moving Average tidak memerlukan parameter tambahan. Kita hanya perlu menentukan berapa periode yang akan kita gunakan untuk menghitung rata-rata. Misalnya, kita akan menggunakan <strong>5 periode</strong>.</p></li>
 <li><p>Mulai dari baris n ke-3, nilai CMA (5) akan sama dengan nilai Value dari n-2 sampai n+2 (dari 1 sampai 5). Terapkan ini hingga n=94. Karena value hanya disiapkan hingga n ke-96</p>

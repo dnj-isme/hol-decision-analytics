@@ -18,7 +18,7 @@ Referensi: wikipedia
 
 Contoh Kasus
 -------------
-Gunakan template di file berikut: `Template.xlsx </assets/session-02/template.xlsx>`_, lihat di page "Probabilistic Distribution"
+Gunakan template di file berikut: :download:`Template.xlsx </assets/session-02/template.xlsx>`, lihat di page "Probabilistic Distribution"
 
 Di sini, kita dapat menganalisa distribusi data dengan menggunakan variance, dan standard deviation.
 

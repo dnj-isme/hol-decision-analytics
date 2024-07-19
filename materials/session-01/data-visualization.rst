@@ -35,7 +35,7 @@ Visualisasi Data Menggunakan Ms. Excel
 
 Ms. Excel menyediakan berbagai fitur untuk membuat visualisasi data yang menarik. Berikut adalah langkah-langkah untuk memvisualisasikan data menggunakan grafik di Ms. Excel:
 
-1. Siapkan data yang ingin divisualisasikan di Ms. Excel. Untuk demonstrasi, kita bisa membuka file berikut: `Template.xlsx </assets/session-01/template.xlsx>`_
+1. Siapkan data yang ingin divisualisasikan di Ms. Excel. Untuk demonstrasi, kita bisa membuka file berikut: :download:`Template.xlsx </assets/session-01/template.xlsx>`
 
 2. Block semua data yang ingin ditampilkan dalam grafik. Jika kita ingin label data ingin ditampilkan, block data tersebut.
 
@@ -59,6 +59,6 @@ Selain itu, kita juga dapat filter data, mengubah elemen apa saja yang ingin dit
 
 Latihan
 -------
-Buatlah grafik berikut berdasarkan data di file `Template.xlsx </assets/session-01/template.xlsx>`_
+Buatlah grafik berikut berdasarkan data di file :download:`Template.xlsx </assets/session-01/template.xlsx>`
 
 .. image:: /assets/session-01/chart-exercise.png

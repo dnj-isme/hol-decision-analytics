@@ -3,7 +3,7 @@ Implementasi K-Means
 
 .. note::
 
-  Untuk session ini, kita akan menggunakan dataset berikut: `Penguin </assets/session-10/penguins.csv>`_
+  Untuk session ini, kita akan menggunakan dataset berikut: :download:`Penguin </assets/session-10/penguins.csv>`
 
   Source: https://www.kaggle.com/code/parulpandey/penguin-dataset-the-new-iris
 

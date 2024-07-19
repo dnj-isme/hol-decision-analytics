@@ -1,12 +1,12 @@
 Visualisasi Linear Regression (Simple)
 ========================================================
 
-Untuk demonstrasi, gunakan template di file berikut: `Template.xlsx </assets/session-03/template.xlsx>`_
+Untuk demonstrasi, gunakan template di file berikut: :download:`Template.xlsx </assets/session-03/template.xlsx>`
 
 Menampilkan Linear Regression pada Grafik
 ------------------------------------------
 
-1. Buatlah grafik scatter dari data yang ada. Lihat materi sesi 1: `Data Visualization <../session-01/data-visualization.html>`_.
+1. Buatlah grafik scatter dari data yang ada. Lihat materi sesi 1: :download:`Data Visualization <../session-01/data-visualization.html>`_.
 
 .. image:: /assets/session-03/scatter-empty.png
   :width: 400px
@@ -75,7 +75,7 @@ Berikut adalah cara mencari nilai :math:`m` dan :math:`b`:
 Latihan
 --------
 
-Selesaikan template di tab **Manual Method** dari file `Template.xlsx </assets/session-03/template.xlsx>`_.
+Selesaikan template di tab **Manual Method** dari file :download:`Template.xlsx </assets/session-03/template.xlsx>`.
 
 Jika perhitungan sudah benar, maka hasilnya akan seperti berikut:
 

@@ -3,7 +3,7 @@ Implementasi k-Nearest Neighbors
 
 .. note::
 
-  Untuk session ini, kita akan menggunakan dataset berikut: `Car Evaluation </assets/session-09/car.csv>`_\
+  Untuk session ini, kita akan menggunakan dataset berikut: :download:`Car Evaluation </assets/session-09/car.csv>`_\
 
   Source: https://archive.ics.uci.edu/dataset/19/car+evaluation
 

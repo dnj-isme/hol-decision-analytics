@@ -7,7 +7,7 @@ Dalam tutorial ini, kita akan mempelajari dasar-dasar Rapid Miner dan bagaimana 
 
 .. note::
   Untuk materi di session 6 dan 7, kita akan menggunakan dataset berikut: 
-  `Dirty Dataset </assets/session-06/Dataset-Dirty.xlsx>`_
+  :download:`Dirty Dataset </assets/session-06/Dataset-Dirty.xlsx>`
   
 .. note::
   Pastikan anda telah mengaktifkan lisence Rapid Miner sebelum memulai tutorial ini. Jika belum, silakan kunjungi `Rapid Miner Website <https://my.rapidminer.com/nexus/account/index.html>`_ untuk mendapatkan lisence gratis, berbayar, maupun versi education.

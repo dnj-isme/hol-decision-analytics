@@ -8,7 +8,7 @@ Probabilistic Reasoning adalah metode yang digunakan untuk mengatasi ketidakpast
 
 Contoh Kasus
 ------------
-Gunakan template di file berikut: `Template.xlsx </assets/session-02/template.xlsx>`_, lihat di page "Probabilistic Reasoning"
+Gunakan template di file berikut: :download:`Template.xlsx </assets/session-02/template.xlsx>`, lihat di page "Probabilistic Reasoning"
 
 Berdasarkan data di atas, tentukan berapa kemungkinan untuk:
 1. Seorang "Teen" memiliki income "High" dari semua populasi?

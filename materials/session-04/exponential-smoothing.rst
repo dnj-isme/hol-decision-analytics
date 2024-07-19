@@ -6,7 +6,7 @@ Exponential smoothing adalah metode peramalan yang memperhitungkan bobot yang be
 Implementasi di Ms Excel
 -------------------------
 
-Gunakan template berikut sebagain demonstrasi: `Template.xlsx </assets/session-04/template.xlsx>`_
+Gunakan template berikut sebagain demonstrasi: :download:`Template.xlsx </assets/session-04/template.xlsx>`
 
 1. Tentukan nilai alpha dan beta. Alpha akan digunakan sebagai rasio Value, sedangkan beta akan digunakan sebagai rasio Exponential Smoothing sebelumnya. 
    
