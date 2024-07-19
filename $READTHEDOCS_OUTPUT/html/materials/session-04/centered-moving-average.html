@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../../">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Centered Moving Average &mdash; HOL Decision Analytics  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../_static/css/theme.css?v=19f00094" />
+      <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../../_static/jquery.js?v=5d32c60e"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="../../_static/documentation_options.js?v=5929fcd5"></script>
+        <script src="../../_static/doctools.js?v=9a2dae69"></script>
+        <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script>let toggleHintShow = 'Click to show';</script>
+        <script>let toggleHintHide = 'Click to hide';</script>
+        <script>let toggleOpenOnPrint = 'true';</script>
+        <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Introduction to Rapid Miner" href="../session-06/rapidminer-introduction.html" />
+    <link rel="prev" title="Exponential Smoothing" href="exponential-smoothing.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../index.html" class="icon icon-home">
+            HOL Decision Analytics
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Overview</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../preface/introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../preface/installation.html">Panduan Instalasi</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 01</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-01/concepts.html">Basic Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-01/dependent-and-independent.html">Dependent and Independent Variabel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-01/data-visualization.html">Data Visualization</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-01/pivot-table.html">Pivot Table</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 02</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-02/probabilistic-distribution.html">Probabilistic Distribution</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-02/probabilistic-reasoning.html">Probabilistic Reasoning</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 03</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/linear-concept.html">Linear Regression Concept</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/simple-linear.html">Visualisasi Linear Regression (Simple)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-03/multiple-linear.html">Visualisasi Linear Regression (Simple)</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 04</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="time-series.html">Time Series Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="exponential-smoothing.html">Exponential Smoothing</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Centered Moving Average</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#implementasi-di-ms-excel">Implementasi di Ms Excel</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 06</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-06/rapidminer-introduction.html">Introduction to Rapid Miner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-06/missing-values.html">Missing Values Handling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-06/attribute-operators.html">Attribute Operators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-06/import-export.html">Import and Export</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 07</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-07/data-preparation.html">Data Transformation</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 08</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-08/naive-bayes.html">Naive Bayes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-08/implementation.html">Implementasi Naive Bayes</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 09</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-09/k-nearest-neighbor.html">K-Nearest Neighbors (kNN)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-09/implementation.html">Implementasi k-Nearest Neighbors</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Session 10</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../session-10/k-means.html">K-Means (Clustering)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-10/implementation.html">Implementasi K-Means</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../session-10/variable-analysis.html">Variable Analysis</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">HOL Decision Analytics</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Centered Moving Average</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/materials/session-04/centered-moving-average.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="centered-moving-average">
+<h1>Centered Moving Average<a class="headerlink" href="#centered-moving-average" title="Link to this heading"></a></h1>
+<p>Centered Moving Average adalah metode smoothing yang digunakan untuk menghilangkan noise dari data. Metode ini bekerja dengan cara mengambil rata-rata dari data yang ada di sekitar data yang akan dihitung. Misalnya, jika kita ingin menghitung data ke-5, maka kita akan mengambil data ke-3, ke-4, ke-5, ke-6, dan ke-7. Dengan demikian, kita bisa mendapatkan nilai rata-rata dari data tersebut.</p>
+<section id="implementasi-di-ms-excel">
+<h2>Implementasi di Ms Excel<a class="headerlink" href="#implementasi-di-ms-excel" title="Link to this heading"></a></h2>
+<p>Gunakan template berikut sebagain demonstrasi: <a class="reference download internal" download="" href="../../_downloads/fe3b33da7cd7db7a553fb50da9f907b0/template.xlsx"><code class="xref download docutils literal notranslate"><span class="pre">Template.xlsx</span></code></a></p>
+<ol class="arabic">
+<li><p>Berbeda dengan Exponential Smoothing, Centered Moving Average tidak memerlukan parameter tambahan. Kita hanya perlu menentukan berapa periode yang akan kita gunakan untuk menghitung rata-rata. Misalnya, kita akan menggunakan <strong>5 periode</strong>.</p></li>
+<li><p>Mulai dari baris n ke-3, nilai CMA (5) akan sama dengan nilai Value dari n-2 sampai n+2 (dari 1 sampai 5). Terapkan ini hingga n=94. Karena value hanya disiapkan hingga n ke-96</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span><span class="n">AVERAGE</span><span class="p">(</span><span class="n">B2</span><span class="p">:</span><span class="n">B6</span><span class="p">)</span><span class="o">=</span>
+</pre></div>
+</div>
+</li>
+<li><p>Selebihnya, proses penentuan Forecast akan sama dengan metode ES. Tentukan Value/CMA Ratio dengan rumus berikut:</p></li>
+</ol>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[Value/ES Ratio = \frac{Value}{CMA}\]</div>
+<p>Atau di Excel</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span><span class="p">[</span><span class="nd">@Value</span><span class="p">]</span> <span class="o">/</span> <span class="p">[</span><span class="nd">@CMA</span><span class="p">]</span>
+</pre></div>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="5">
+<li><p>Dapatkan value seasonality di Seasonality Table. Di Excel, terapkan formula berikut:</p></li>
+</ol>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>=AVERAGEIF($C$4:$C$95, [@Quarter], $F$4:$F$95)
+</pre></div>
+</div>
+<p>Note: Gunakan vlookup untuk memasukkan data seasonality ke table utama kita untuk mengisi kolom Seasonality.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span><span class="n">VLOOKUP</span><span class="p">([</span><span class="nd">@Quarter</span><span class="p">],</span><span class="n">Seasonality_CMA</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="n">FALSE</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="6">
+<li><p>Kita juga akan menentukan value data yang sudah di-deseasonalize dengan rumus berikut:</p></li>
+</ol>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[Seasonalized Value = Value / Seasonality\]</div>
+<p>Atau di excel</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span><span class="p">[</span><span class="nd">@Value</span><span class="p">]</span><span class="o">/</span><span class="p">[</span><span class="nd">@Seasonality</span><span class="p">]</span>
+</pre></div>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="7">
+<li><p>Kita juga akan koefisien Intercept dan Variable dari data yang ada. Gunakan Data Analysis untuk menemukan nilai tersebut (lihat di materi sebelumnya)</p></li>
+<li><p>Untuk menentukan nilai trendline, gunakan persamaan regression berdasarkan koefisien yang sudah ditentukan.</p></li>
+</ol>
+<blockquote>
+<div><p>Ingat rumus regression</p>
+<div class="math notranslate nohighlight">
+\[Y = a + bX\]</div>
+<p>dimana a adalah koefisien intercept dan b adalah koefisien variable. Sedangkan X adalah nilai yang akan dihitung (di kondisi ini adalah <em>n</em>)</p>
+</div></blockquote>
+<ol class="arabic simple" start="9">
+<li><p>Untuk forecast, kita bisa menggunakan rumus berikut:</p></li>
+</ol>
+<blockquote>
+<div><div class="math notranslate nohighlight">
+\[Forecast = Trendline \times Seasonality\]</div>
+</div></blockquote>
+<p>Jika semuanya sudah diisi dengan teliti, jika kita membuat grafik untuk mengetahui hubungan n terhadap Value dan forecast, kita akan mendapatkan hasil seperti berikut:</p>
+<a class="reference internal image-reference" href="../../_images/Result-CMA.png"><img alt="Centered Moving Average" class="align-center" src="../../_images/Result-CMA.png" style="width: 800px;" /></a>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="exponential-smoothing.html" class="btn btn-neutral float-left" title="Exponential Smoothing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../session-06/rapidminer-introduction.html" class="btn btn-neutral float-right" title="Introduction to Rapid Miner" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, JC22-2.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
