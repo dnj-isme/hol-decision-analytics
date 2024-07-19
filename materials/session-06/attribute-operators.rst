@@ -17,7 +17,7 @@ Untuk melakukan itu, kita bisa menggunakan operator "Generate Attributes". Di pa
 
 Kemudian, kita akan Edit List, lalu buatlah attribute baru dengan nama "ReportQuarter", dan untuk functionnya gunakan function berikut:
 
-.. code-block:: excel
+.. code-block::
 
   ceil((date_get([ReportDate], DATE_UNIT_MONTH) + 1) / 3)
 

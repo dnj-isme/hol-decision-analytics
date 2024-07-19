@@ -17,7 +17,9 @@ Gunakan template berikut sebagain demonstrasi: `Template.xlsx </assets/session-0
   .. code-block:: excel
 
     =B2
+
 3. Untuk baris selanjutnya, gunakan rumus berikut:
+
   .. math::
     ES_t = \alpha \times Value_{t-1} + (1 - \alpha) \times ES_{t-1}
 
@@ -25,7 +27,9 @@ Gunakan template berikut sebagain demonstrasi: `Template.xlsx </assets/session-0
   .. code-block::
       
       =D3 * $M$11 + E3 * $M$12
+
 4. Tentukan Value/ES Ratio dengan rumus berikut:
+
   .. math::
     Value/ES Ratio = \frac{Value}{ES}
 

@@ -145,7 +145,7 @@
 <ol class="arabic">
 <li><p>Berbeda dengan Exponential Smoothing, Centered Moving Average tidak memerlukan parameter tambahan. Kita hanya perlu menentukan berapa periode yang akan kita gunakan untuk menghitung rata-rata. Misalnya, kita akan menggunakan <strong>5 periode</strong>.</p></li>
 <li><p>Mulai dari baris n ke-3, nilai CMA (5) akan sama dengan nilai Value dari n-2 sampai n+2 (dari 1 sampai 5). Terapkan ini hingga n=94. Karena value hanya disiapkan hingga n ke-96</p>
-<div class="highlight-excel notranslate"><div class="highlight"><pre><span></span>=AVERAGE(B2:B6)=
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span><span class="n">AVERAGE</span><span class="p">(</span><span class="n">B2</span><span class="p">:</span><span class="n">B6</span><span class="p">)</span><span class="o">=</span>
 </pre></div>
 </div>
 </li>
@@ -155,7 +155,7 @@
 <div><div class="math notranslate nohighlight">
 \[Value/ES Ratio = \frac{Value}{CMA}\]</div>
 <p>Atau di Excel</p>
-<div class="highlight-excel notranslate"><div class="highlight"><pre><span></span>=[@Value] / [@CMA]
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span><span class="p">[</span><span class="nd">@Value</span><span class="p">]</span> <span class="o">/</span> <span class="p">[</span><span class="nd">@CMA</span><span class="p">]</span>
 </pre></div>
 </div>
 </div></blockquote>
@@ -163,11 +163,11 @@
 <li><p>Dapatkan value seasonality di Seasonality Table. Di Excel, terapkan formula berikut:</p></li>
 </ol>
 <blockquote>
-<div><div class="highlight-excel notranslate"><div class="highlight"><pre><span></span>=AVERAGEIF($C$4:$C$95, [@Quarter], $F$4:$F$95)
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>=AVERAGEIF($C$4:$C$95, [@Quarter], $F$4:$F$95)
 </pre></div>
 </div>
 <p>Note: Gunakan vlookup untuk memasukkan data seasonality ke table utama kita untuk mengisi kolom Seasonality.</p>
-<div class="highlight-excel notranslate"><div class="highlight"><pre><span></span>=VLOOKUP([@Quarter],Seasonality_CMA,2,FALSE)
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span><span class="n">VLOOKUP</span><span class="p">([</span><span class="nd">@Quarter</span><span class="p">],</span><span class="n">Seasonality_CMA</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="n">FALSE</span><span class="p">)</span>
 </pre></div>
 </div>
 </div></blockquote>
@@ -178,7 +178,7 @@
 <div><div class="math notranslate nohighlight">
 \[Seasonalized Value = Value / Seasonality\]</div>
 <p>Atau di excel</p>
-<div class="highlight-excel notranslate"><div class="highlight"><pre><span></span>=[@Value]/[@Seasonality]
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">=</span><span class="p">[</span><span class="nd">@Value</span><span class="p">]</span><span class="o">/</span><span class="p">[</span><span class="nd">@Seasonality</span><span class="p">]</span>
 </pre></div>
 </div>
 </div></blockquote>

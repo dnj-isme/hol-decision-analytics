@@ -12,28 +12,30 @@ Gunakan template berikut sebagain demonstrasi: `Template.xlsx </assets/session-0
 
 2. Mulai dari baris n ke-3, nilai CMA (5) akan sama dengan nilai Value dari n-2 sampai n+2 (dari 1 sampai 5). Terapkan ini hingga n=94. Karena value hanya disiapkan hingga n ke-96
 
-   .. code-block:: excel
+   .. code-block::
 
      =AVERAGE(B2:B6)=
 
 3. Selebihnya, proses penentuan Forecast akan sama dengan metode ES. Tentukan Value/CMA Ratio dengan rumus berikut:
+
   .. math::
     Value/ES Ratio = \frac{Value}{CMA}
 
   Atau di Excel
   
-  .. code-block:: excel
+  .. code-block::
 
     =[@Value] / [@CMA]
+
 5. Dapatkan value seasonality di Seasonality Table. Di Excel, terapkan formula berikut:
 
-  .. code-block:: excel
+  .. code-block::
 
     =AVERAGEIF($C$4:$C$95, [@Quarter], $F$4:$F$95)
 
   Note: Gunakan vlookup untuk memasukkan data seasonality ke table utama kita untuk mengisi kolom Seasonality.
 
-  .. code-block:: excel
+  .. code-block::
 
     =VLOOKUP([@Quarter],Seasonality_CMA,2,FALSE)
 
@@ -44,7 +46,7 @@ Gunakan template berikut sebagain demonstrasi: `Template.xlsx </assets/session-0
 
   Atau di excel
 
-  .. code-block:: excel
+  .. code-block::
 
     =[@Value]/[@Seasonality]
 

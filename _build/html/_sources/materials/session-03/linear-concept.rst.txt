@@ -13,6 +13,7 @@ Tujuan regresi linear adalah untuk memprediksi nilai variabel dependen berdasark
 Sebagai contoh, pada gambar di bawah ini kita bisa melihat sebuah grafik yang menunjukkan hubungan jumlah pendapatan dengan tingkat kebahagian. Kita dapat melihat bahwa ada suatu tren dimana semakin tinggi pendapatan seseorang, semakin tinggi pula tingkat kebahagian yang dirasakan. Tren ini dapat kita ilustrasikan dalam bentuk regresi.
 
 .. image:: /assets/session-03/simple-linear-regression-graph.png
+
 Referensi: https://www.scribbr.com/statistics/simple-linear-regression/
 
 Rumus Dasar
