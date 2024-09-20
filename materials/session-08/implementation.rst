@@ -3,7 +3,7 @@ Implementasi Naive Bayes
 
 .. note::
   
-  Untuk session ini, kita akan menggunakan dataset berikut: :download:`Customer Behaviour </assets/session-08/Customer_Behaviour.csv.xlsx>`
+  Untuk session ini, kita akan menggunakan dataset berikut: :download:`Customer Behaviour </assets/session-08/Customer_Behaviour.csv>`
 
   Source: https://www.kaggle.com/datasets/denisadutca/customer-behaviour
 
