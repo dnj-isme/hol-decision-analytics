@@ -45,4 +45,4 @@ Setelah itu, kita dapat mengatur konfigurasi dari node "Write Excel" tersebut. K
 
   Ubah lokasi excel file ke tempat yang kamu inginkan
 
-Jika sudah selesai, tekan tombol "Run", maka hasil dari process kita akan disimpan di dalam file Excel tersebut. (Contoh: `File Output </assets/session-06/Session06-Results.xlsx>`_)
+Jika sudah selesai, tekan tombol "Run", maka hasil dari process kita akan disimpan di dalam file Excel tersebut. (Contoh: :download:`File Output </assets/session-06/Session06-Result.xlsx>`)
