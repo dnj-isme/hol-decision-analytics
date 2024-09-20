@@ -13,6 +13,7 @@ Implementasi k-Nearest Neighbors
 
   a. Filter Examples untuk menghapus data kosong
   b. Map (untuk mengubah attribut polynomial)
+
     * Untuk attribute **buying**, **maint**, dan **safety**; ubah map menjadi sebagai berikut:
 
       - low = 1
@@ -32,6 +33,7 @@ Implementasi k-Nearest Neighbors
       - acc = 2
       - good = 3
       - vgood = 4 
+
   c. Parse Numbers (untuk kolom polynomial menjadi numeric)
 
   d. Normalize (untuk semua kolom, kecuali *class*)
